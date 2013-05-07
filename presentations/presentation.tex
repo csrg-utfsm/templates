@@ -1,0 +1,54 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usepackage[english,activeacute]{babel}
+\usepackage[utf8]{inputenc}
+
+
+\mode<presentation> {
+\usetheme{Madrid}
+\titlegraphic{\includegraphics[width=2cm]{img/src/utfsm}\hspace*{4.75cm}~%
+   \includegraphics[width=2cm]{img/src/csrg}}
+}
+
+\pgfdeclareimage[height=1.1cm]{logo-izq}{img/src/utfsm-off.png}
+\pgfdeclareimage[height=1.1cm]{logo-der}{img/src/csrg-off.png}
+\logo{\pgfuseimage{logo-der}}
+\setbeamertemplate{sidebar left}{
+	\logo{\pgfuseimage{logo-izq}}
+	\vfill
+	\rlap{\hskip0.1cm\insertlogo}
+	\vskip15pt
+}
+
+%title%
+\title[Short title]{Full Title of the Talk}
+\author{author} 
+\institute[UTFSM]{
+\textit{mail@csrg.cl} \\
+\medskip
+Universidad Técnica Fedrico Santa María
+}
+\date{\today} 
+
+
+
+
+\begin{document}
+
+\begin{frame}[t,plain]
+\titlepage 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Overview} 
+	\tableofcontents 
+\end{frame}
+
+\input{input/example}
+
+%final%
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+
+\end{document} 
