@@ -2,25 +2,21 @@
 \usepackage{graphicx}
 \usepackage[english,activeacute]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{tikz}
 
+\usetheme[pageofpages=of,
+          alternativetitlepage=true,
+          titlepagelogo=,
+          watermark=,
+          watermarkheight=50px,
+          watermarkheightmult=1,
+          ]{Torino}
 
-\mode<presentation> {
-\usetheme{Torino}
-\titlegraphic{\includegraphics[width=2cm]{img/src/utfsm}\hspace*{4.75cm}~%
+\titlegraphic{\includegraphics[width=2cm]{img/src/utfsm}\hspace*{7.2cm}~%
    \includegraphics[width=2cm]{img/src/csrg}}
-}
 
-\usecolortheme{Nouvelle}
-
-%\pgfdeclareimage[height=1.1cm]{logo-izq}{img/src/utfsm-off.png}
-%\pgfdeclareimage[height=1.1cm]{logo-der}{img/src/csrg-off.png}
-%\logo{\pgfuseimage{logo-der}}
-%\setbeamertemplate{sidebar left}{
-%	\logo{\pgfuseimage{logo-izq}}
-%	\vfill
-%	\rlap{\hskip0.1cm\insertlogo}
-%	\vskip15pt
-%}
+\usecolortheme{freewilly}
 
 %title%
 \title[Short title]{Full Title of the Talk}
@@ -33,12 +29,14 @@ Universidad Técnica Fedrico Santa María
 \date{\today} 
 
 
-
 \begin{document}
 
+%first slide%
 \begin{frame}[t,plain]
 \titlepage 
 \end{frame}
+
+
 
 \begin{frame}
 	\frametitle{Overview} 
@@ -47,9 +45,10 @@ Universidad Técnica Fedrico Santa María
 
 \input{input/example}
 
-%final%
+
+
+%final slide%
 \begin{frame}[t,plain]
 \titlepage
 \end{frame}
-
 \end{document} 
