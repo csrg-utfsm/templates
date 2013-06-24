@@ -1,4 +1,4 @@
 templates
 =========
 
-Document format
+Document format.
